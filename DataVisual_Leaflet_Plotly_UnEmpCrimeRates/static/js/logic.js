@@ -28,11 +28,7 @@ function createMap(layer) {
 }
 
 function createMarkers(dataset) {
-  // Pull the "stations" property from response.data.
-  // console.log(response);
-  //  var unemp_arr = data_var.length();
-  // console.log(unemp_arr);
-
+  
   // Initialize an array to hold Unemployment markers.
   var newUnempMarkers = [];
 
@@ -43,21 +39,12 @@ function createMarkers(dataset) {
   for (var index = 0; index < dataset.length; index++) {
     var unemp = dataset[index];
 
-    // Set the data location property to a variable.
-    var totcrime = dataset[index].Total_CrimeRate;
-    // Check for the location property.
-    // if (totcrime) {
-
-    //     // Add a new marker to the cluster group, and bind a popup.
-    //     markers.addLayer(L.marker([totcrime.Latitude, totcrime.Longitude])
-    //       .bindPopup("<h3>" + totcrime.State + "<h3><h3>Year: " + totcrime.Year + "</h3><h3>Year: " + totcrime.Unemployment + "</h3>"));
-    //   }
-    // // Add our marker cluster layer to the map.
-    // myMap.addLayer(markers);
 
     // For each station, create a marker, and bind a popup with the station's name.
     var unempMarker = L.marker([unemp.Latitude, unemp.Longitude])
-      .bindPopup("<h3>" + unemp.State + "<h3><h3>Year: " + unemp.Year + "</h3><h3>Year: " + unemp.Unemployment + "</h3>");
+      .bindPopup("<h3>" + unemp.State + "<h3><h3>Year: " 
+      + unemp.Year + "</h3><h3>Year: " + unemp.Unemployment 
+      + "</h3><h3>Crime Rate: " + unemp.Total_CrimeRate + "</h3>");
 
     //   // Add the marker to the bikeMarkers array.
     newUnempMarkers.push(unempMarker);
