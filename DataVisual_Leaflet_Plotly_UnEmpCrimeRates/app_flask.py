@@ -51,7 +51,8 @@ def map():
         "Export_DataFrame.json"
     );
     print("beforeHere");
-    with open("/Users/jobyaugustine/Desktop/Projects/MyTry_Proj3_LastAttempt/Export_DataFrame.json") as fp:
+    # with open("/Users/jobyaugustine/Desktop/Projects/MyTry_Proj3_LastAttempt/Export_DataFrame.json") as fp:
+    with open("Export_DataFrame.json") as fp:    
         data_set = json.load(fp)
       
         

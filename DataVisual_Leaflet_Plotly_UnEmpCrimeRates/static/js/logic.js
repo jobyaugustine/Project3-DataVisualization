@@ -59,12 +59,12 @@ var crimeMarkers = [];
 
       // For each station, create a marker, and bind a popup with the station's name.
         var unempMarker = L.marker([unemp.Latitude, unemp.Longitude])
-        .bindPopup("<h3>" + unemp.State + "<h3><h3>Year: " + unemp.Year + "</h3><h3>UnEmployment: " + unemp.Unemployment + "</h3>");
+        .bindPopup("<h3>" + unemp.State + "<h3><h3>Year: " + unemp.Year + "</h3><h3>UnEmployment: " + unemp.Unemployment + "</h3><h3>Population: " + unemp.Population + "</h3>");
   
 
         // For each station, create a marker, and bind a popup with the station's name.
         var crimeMarker = L.marker([crime.Latitude, crime.Longitude])
-        .bindPopup("<h3>" + crime.State + "<h3><h3>Year: " + crime.Year + "</h3><h3>TotalCrimeRate: " + crime.Total_CrimeRate + "</h3>");
+        .bindPopup("<h3>" + crime.State + "<h3><h3>Year: " + crime.Year + "</h3><h3>TotalCrimeRate: " + crime.Total_CrimeRate + "</h3><h3>Population: " + crime.Population + "</h3>");
   
 //     //   // Add the marker to the bikeMarkers array.
         unempMarkers.push(unempMarker);
