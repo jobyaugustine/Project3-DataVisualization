@@ -44,32 +44,35 @@ def home():
 
 @app_flask.route("/map/", methods=["GET", "POST"])
 def map():
-    # Get Dataset
+    # # Get Dataset
     file_path = os.path.join(
         os.path.split(os.path.abspath(__name__))[0],
-        "Working copy2_leaflettry",
+        "MyTry_Proj3_LastAttempt",
         "Export_DataFrame.json"
-    )
-    with open("Export_DataFrame.json") as fp:
+    );
+    print("beforeHere");
+    with open("/Users/jobyaugustine/Desktop/Projects/MyTry_Proj3_LastAttempt/Export_DataFrame.json") as fp:
         data_set = json.load(fp)
-
+      
+        
+    print("AfterjsonHere");
     if request.method == "POST":
         year = int(request.form.get('selDataset'))
-
-        new_data_set = []
-
+        print(year);
+    new_data_set = []
+    # print(data_set);
         # Filter Data
-        for i in data_set:
-            if i["Year"] == year:
-                new_data_set.append(i)
-        data_set = new_data_set
-        # print(new_data_set)
-
+    for i in data_set:
+        if i['Year'] == year:
+            new_data_set.append(i)
+        
+    data_set = new_data_set
+    
     return render_template("map.html", data_set=data_set)
-
+    
 # Route that will trigger the getmapdata() function
 
 
 if __name__ == "__main__":
     # app_flask.run(debug=True)
-     app_flask.run(debug=True, port=2000)
+    app_flask.run(debug=True, port=2000)
