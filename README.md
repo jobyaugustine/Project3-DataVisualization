@@ -63,3 +63,7 @@ The dashboard compares the unemployment rates with different crime rates across 
 The users will also be able to select a certain year from which the database will return unemployment and crime rates for the states as well as 10 states with highest unemployment and crime rates
 
 Users have the ability to view the map with the crime rates and unemployment rates for the year selected
+
+**Instruction for running the application**
+Get into DataVisual_Leaflet_Plotly_UnEmpCrimeRates  folder
+Run the app_flask.py
