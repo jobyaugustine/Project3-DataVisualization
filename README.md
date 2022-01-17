@@ -33,7 +33,10 @@
 ## Key Deliverables
 ### Jupyter Notebooks
 - [Unemployment_Crime_Data_Analysis](DataVisual_Leaflet_Plotly_UnEmpCrimeRates/UnEmployment_Crime_State.ipynb)
-
+### Powerpoint Presentation
+- [Powerpoint Presentation](Team_NeedCashNow_Project3.pptx)
+### Web Application
+- [Web Application](DataVisual_Leaflet_Plotly_UnEmpCrimeRates/app_flask.py)
 
 ## Accomplishments
 
