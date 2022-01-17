@@ -64,6 +64,7 @@ The users will also be able to select a certain year from which the database wil
 
 Users have the ability to view the map with the crime rates and unemployment rates for the year selected
 
+
 **Instruction for running the application** 
 - Get into DataVisual_Leaflet_Plotly_UnEmpCrimeRates  folder
-- Run the app_flask.py
+- Run the app_flask.py(DataVisual_Leaflet_Plotly_UnEmpCrimeRates/app_flask.py)
