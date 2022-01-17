@@ -32,7 +32,7 @@
 
 ## Key Deliverables
 ### Jupyter Notebooks
-- [Unemployment_Crime_Data_Analysis]
+- [Unemployment_Crime_Data_Analysis](DataVisual_Leaflet_Plotly_UnEmpCrimeRates/UnEmployment_Crime_State.ipynb)
 
 
 ## Accomplishments
